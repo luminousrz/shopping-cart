@@ -1,0 +1,227 @@
+@font-face {
+    font-family: vazirmatn;
+    src: url("../fonts/Vazirmatn-Regular.woff2") format("woff2");
+    font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: vazirmatn;
+    src: url("../fonts/Vazirmatn-Medium.woff2") format("woff2");
+    font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: vazirmatn;
+    src: url("../fonts/Vazirmatn-Black.woff2") format("woff2");
+    font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+    font-family: vazirmatn;
+    src: url("../fonts/Vazirmatn-Bold.woff2") format("woff2");
+    font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+body{
+    font-family: vazirmatn , sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* ICONS BOX */
+.iconsBox .cartIcon{
+    position: relative;
+}
+.iconsBox .cartIcon span{
+    font-size: 12px;
+    margin-bottom: 5px;
+    background: rgb(66, 126, 58);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 95%;
+    padding: 1px 7px;
+}
+.headerHorizontalLine hr{
+    margin:5px;
+}
+.titleOfPage h4{
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.listOfDetails{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+    padding-inline-end: 37px;
+    margin-bottom: 0;
+}
+.listOfDetails li{
+    margin: 30px 80px 8px 80px !important;
+}
+.detailsHorizontalLine hr{
+    opacity: 100;
+    margin: 24px 0 24px 0;
+}
+.deleteOrderIcon{
+    display: flex;
+    justify-content: end;
+    /* margin-left: 15px; */
+    cursor: pointer;
+}
+.imgWrapperOfOrder img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    /* margin-left: 15px; */
+}
+.orderCounter {
+    display: flex;
+    justify-content: space-around;
+}
+.orderCounter .priceWrapper{
+    position: relative;
+}
+.orderCounter .priceWrapper p{
+    margin-bottom: 0 !important;
+    margin-top: 20px;
+    margin-left: 77px;
+    font-size: 14px;
+}
+.countWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: -28px;
+    margin-left: 140px;
+}
+.countWrapper .fa-caret-up , .countWrapper .fa-caret-down{
+    font-size: 11px;
+}
+.orderCounter span{
+    font-size: 12px;
+    margin-top: 2px;
+}
+.productText p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.productText span{
+    font-size: 12px;
+    font-weight: 200;
+    color: #568b83;
+}
+/* .totalPriceOfOrder{
+    font-size: 15px;
+    display: flex;
+} */
+/* .totalPriceOfOrder p{
+    margin-top: 19px;
+}
+.totalPriceOfOrder span{
+    font-size: 12px;
+    color: #5f5f5f;
+} */
+.sumOfOrders{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    font-size: 14px;
+    color: #1c5523;
+    margin-top: 10px;
+}
+@media (max-width: 991.98px){
+    .sumOfOrders{
+        margin-left: 74px;
+    }
+}
+.sumOfOrders p{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #16443c;
+}
+.deleteOrderButton button{
+    border: 0;
+    background-color:#0e2c27;
+    padding: 8px;
+    width: 130px;
+    color: #fff;
+    border-radius: 20px;
+}
+.horizontalLine{
+    height: .5px;
+    width: 53%;
+    background-color: #cecdcd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.containerOfContent .messageBox , .deleteAllMessageBox{
+    text-align: center;
+    color: #074707;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.containerOfContent a , .deleteAllTextReturnLink{
+    text-decoration: none;
+}
+.containerOfContent .returnText , .deleteAllTextReturn{
+    text-align: center;
+    color: #277427;
+    font-size: 15px;
+    display: block;
+}
+.dark-theme{
+    background-color: #000000;
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    .listOfDetails li{
+        margin: 31px 50px 8px 24px !important;
+    }
+    .deleteOrderIcon{
+        margin-left: 22px;
+    }
+    .horizontalLine{
+        width: 60%;
+    }
+}
+@media (max-width: 767.98px) {
+    .deleteOrderIcon{
+        margin-bottom: 7px;
+        display: flex;
+        justify-content: center;
+    }
+    .imgWrapperOfOrder{
+        margin-left: 15px;
+    }
+    .productText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7px;
+    }
+    .productText span{
+        margin-left: 15px;
+    }
+    .countWrapper{
+        margin-left: 8px;
+    }
+    .orderCounter .priceWrapper p{
+        margin-left: -8px;
+    }
+
+}

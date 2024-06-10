@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+</head>
+<body>
+     <!------ HEADER ICONS -------->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 d-flex justify-content-end">
+                <div class="iconsBox mt-3 ms-3 d-flex">
+                    <div class="cartIcon ms-2">
+                        <i class="fas fa-cart-shopping"></i>
+                        <span>2</span>
+                    </div>
+                        <i class="fas fa-cloud-moon" onclick="switchToDarkMood()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-11">
+                <div class="headerHorizontalLine">
+                    <hr width="100%" size="2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- ORDER DETAILS BOX -------->
+    <div class="container">
+        <!-- TITLE OF TABLE -->
+        <div class="row">
+            <div class="col-12">
+                <div class="titleOfPage d-flex justify-content-center">
+                    <h4>سبدخرید</h4>
+                </div>
+            </div>
+        </div>
+        <!-- DETAIL OF TABLE -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <ul class="listOfDetails list-inline">
+                    <li class="list-inline-item" style="margin-left: 191px !important;">نام‌محصول</li>
+                    <li class="list-inline-item" >تعداد</li>
+                    <li class="list-inline-item">قیمت</li>
+                </ul>
+            </div>
+        </div>
+        <!-- THE DIVIDING LINE -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-12">
+                <div class="detailsHorizontalLine">
+                    <hr width="100%" size="2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conatiner containerOfContent justify-content-center">
+        <!-- SUM OF ORDERS -->
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-8">
+                <div class="sumOfOrders">
+                    <p>مجموع:</p>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- DELETE ALL BUTTON -------->
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-8 mb-5">
+                <div class="deleteOrderButton">
+                    <button>حذف‌همه</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
